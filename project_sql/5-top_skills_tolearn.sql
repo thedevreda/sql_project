@@ -41,7 +41,7 @@ SELECT
 FROM
     skills_demand
 INNER JOIN  average_salary ON skills_demand.skill_id = average_salary.skill_id
-ORDER BY
+ORDER BY -- You can switch the order to see the high paied then demanded skills
     demand_count DESC, 
     avg_salary DESC
 LIMIT 5;
